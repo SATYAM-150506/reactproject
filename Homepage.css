@@ -1,0 +1,104 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    background: #ececec; /* Light background for the body */
+}
+
+.navbar {
+    margin-top: 30px;
+    margin-right: 50px;
+    color: rgb(51, 46, 46); /* Text color */
+    padding: 5px 20px; /* Reduced padding for a shorter navbar height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.login button {
+    background-color: black;
+    color: azure;
+    height: 35px;
+    margin-right: 10px;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.login button a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from button */
+}
+
+.login button:hover {
+    background-color: azure; /* Change background on hover */
+    color: black; /* Change text color on hover */
+}
+
+.fcontainer {
+    display: flex; /* Align items in a row */
+    margin-left: auto; /* Push the container to the right */
+}
+
+.fcontainer div {
+    margin: 0 20px; /* Increased spacing between items */
+}
+
+.fcontainer a {
+    color: rgb(51, 46, 46); /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding */
+    transition: color s; /* Smooth transition for color */
+}
+
+span a:hover{
+  text-decoration: underline;
+  color: #000;
+}
+
+.fitem7 {
+    margin-left: 20px; /* Space for the search input */
+}
+
+input[type="text"] {
+    padding: 5px; /* Padding for the search input */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+}
+
+input[type="text"]:focus {
+    border: 1px solid azure; /* Border on focus */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .fcontainer {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 10px; /* Space above the container */
+    }
+
+    .fcontainer div {
+        margin: 5px 0; /* Vertical spacing for items */
+    }
+
+    .login {
+        margin-bottom: 10px; /* Space below the login buttons */
+    }
+}
